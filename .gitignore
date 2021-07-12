@@ -1,0 +1,10 @@
+node_modules
+secrets.js
+public/bundle.js
+public/bundle.js.map
+.DS_Store
+npm-debug.log
+google-vision-keys.json
+.env
+bundle.js.LICENSE.txt
+dist

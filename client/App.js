@@ -5,12 +5,10 @@ import axios from 'axios';
 
 const App = () => {
   const [testData, setTestData] = useState('');
-  const getdata = async () => {
-    const { data } = await axios.get('/api/test');
-    console.log(data);
-    setTestData(data.message);
-  };
-  getdata();
+  let data = axios.get('/api/test').then((data) => {
+    setTestData(data.data.message);
+  });
+  console.log(testData);
   return (
     <div>
       {/* <Navbar /> */}
